@@ -1,0 +1,50 @@
+.navbar-default {
+  background-color: @black;
+  border: none;
+  padding: 2rem 0;
+}
+.navbar {
+  ul {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    display: table;
+    &:before {
+      position: absolute;
+      display: block;
+      content: '';
+      width: 100%;
+      height: 1px;
+      background-color: @white;
+      bottom: -1rem;
+      left: 0;
+    }
+  }
+  li {
+    display: inline-block;
+    font-family: "petala-pro";
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    letter-spacing: 0.1rem;
+    &:nth-child(1) {
+      padding: 1rem 1.5rem 1rem 0;
+    }
+    &:nth-child(4) {
+      padding: 1rem 0 1rem 1.5rem;
+    }
+  }
+  a, a:visited {
+    color: @white;
+    padding: 1rem;
+    outline: medium none;
+    opacity: 1;
+    transition: all 0.3s ease-out;
+    &:hover {
+      text-decoration: none;
+      color: @midgrey;
+    }
+  }
+}
