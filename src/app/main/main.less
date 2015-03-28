@@ -1,16 +1,35 @@
 .colorwrapper {
   background-color: @black;
+  height: 700px; //remove this
 }
 
 .welcome {
+  padding: 0;
   background-color: @black;
   .intro {
     color: @white;
+    margin-top: 15%; //remove this
     h1 {
       font-size: 6rem;
+      text-transform: none;
     }
     h2 {
       font-size: 4.5rem;
+    }
+  }
+}
+
+.projects {
+  h4 {
+    margin: 0 auto;
+    max-width: 50rem;
+    line-height: 2.5rem;
+  }
+  .project-list {
+    margin: 4rem 0;
+    .project {
+      background-color: @black;
+      height: 30rem;
     }
   }
 }
