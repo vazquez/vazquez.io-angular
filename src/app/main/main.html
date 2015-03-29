@@ -18,11 +18,19 @@
   <section>
     <h1 class="text-center">This is some of my work.</h1>
     <h4 class="text-center">Here are some of the recent projects I've had the pleasure of undertaking. Every one of them contains a piece of me, how else could I call it my own?</h4>
-    <div class="project-list">
-      <div class="col-md-4 project">Project 1</div>
-      <div class="col-md-4 project">Project 2</div>
-      <div class="col-md-4 project">Project 3</div>
+    <div class="col-sm-12 project-list">
+      <div ng-repeat="project in projects">
+        <div class="col-md-4 thumb">
+          <img ng-src="assets/projects/{{project.img}}" alt="Mozilla Webmaker">
+          <h4>{{project.name}}</h4>
+          <p>{{project.desc}}</p>
+          <a href="#">View case study</a>
+        </div>
+      </div>
     </div>
+    <h1 class="text-center">But I want more...</h1>
+    <h4 class="text-center">I want to inspire more people, craft better experiences, and talk to amazing people with bright ideas. I'm in it for the thrill. Have an idea? <a href="mailto:hello@rvazquez.ca">Let's talk</a>.</h4>
+</h1>
   </section>
 </div>
 

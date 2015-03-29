@@ -1,6 +1,9 @@
 .colorwrapper {
   background-color: @black;
   height: 700px; //remove this
+  // &.projects {
+  //   background-color: #1E2225;
+  // }
 }
 
 .welcome {
@@ -20,16 +23,32 @@
 }
 
 .projects {
+  color: #1E2225;
   h4 {
+    color: @black;
     margin: 0 auto;
-    max-width: 50rem;
+    max-width: 70rem;
+    font-size: 2rem;
     line-height: 2.5rem;
   }
   .project-list {
     margin: 4rem 0;
-    .project {
-      background-color: @black;
-      height: 30rem;
+    .thumb {
+      padding: 0;
+      img {
+        max-width: 100%;
+        opacity: 1;
+        transition: opacity 0.3s ease-in;
+      }
+      &:hover{
+        img {
+          opacity: 0.7;
+        }
+      }
+      p {
+        padding: 1rem 0 0 0;
+        max-width: 30rem;
+      }
     }
   }
 }
