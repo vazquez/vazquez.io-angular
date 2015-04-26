@@ -21,10 +21,12 @@
     <div class="col-sm-12 project-list">
       <div ng-repeat="project in projects">
         <div class="col-md-4 thumb">
-          <img ng-src="assets/projects/{{project.img}}" alt="Mozilla Webmaker">
-          <h4>{{project.name}}</h4>
-          <p>{{project.desc}}</p>
-          <a href="#">View case study</a>
+          <a class="project-img-link" href="#"><img ng-src="assets/projects/{{project.img}}" alt="Mozilla Webmaker"></a>
+          <div class="metadata">
+            <h4>{{project.name}}</h4>
+            <p>{{project.desc}}</p>
+            <a class="project-link" href="#">View case study</a>
+          </div>
         </div>
       </div>
     </div>
